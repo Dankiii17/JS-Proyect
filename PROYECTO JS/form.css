@@ -1,0 +1,8 @@
+form{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 30%;
+    align-content: center;
+    justify-content: center;
+    
+}
