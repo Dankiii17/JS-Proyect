@@ -4,24 +4,36 @@
     </head>
     <body>
         <form action="">
-            <label for="">Full name:</label>
-                <input type="text" placeholder="Enter your full name">
-            <label for="">Email:</label>
-                <input type="text" placeholder="Enter your email">
-                <button>Validate</button>
-                <label for="">Gender:</label>
-                <input type="radio" name="gender" id="gender"><label for="">Male</label>
-                <input type="radio" name="gender" id="gender"><label for="">Female</label>
-                <input type="radio" name="gender" id="gender"><label for="">Other</label>
-                <label for="">Country:</label>
-                <select name="" id="" >
-                    <option value="" selected >Select your country</option>
-                    <option value="">España</option>
-                    <option value="">Andorra</option>
-                    <option value="">Jamaica</option>
-                    <option value="">Brasil</option>
+            <div class="linea">
+                <label for="fullname">Full name:</label>
+                <input type="text" id="fullname" placeholder="Enter your full name">
+            </div>
+            <div class="linea">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Enter your email">
+            </div>
+            <div class="linea">
+                <button type="button">Validate</button>
+            </div>
+            <div class="linea">
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                <input type="radio" name="gender" id="other"><label for="other">Other</label>
+            </div>
+            <div class="">
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="" selected>Select your country</option>
+                    <option value="España">España</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Brasil">Brasil</option>
                 </select>
-                 <input type="submit">
+            </div>
+            <div class="linea">
+                <input type="submit" value="Send">
+            </div>
         </form>
     </body>
 </html>
