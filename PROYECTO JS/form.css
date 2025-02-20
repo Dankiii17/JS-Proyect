@@ -23,3 +23,24 @@ input{
     width: 100%;
     
 }
+ul{
+    
+    list-style-type: none;
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 0px;
+    margin: auto;
+  }
+  li{
+  margin-right: 10px;
+  margin-left: 10px;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
