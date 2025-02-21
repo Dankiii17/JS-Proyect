@@ -1,46 +1,83 @@
-form{
-    border-radius: 10px;
-    width: 80%;
-    margin: auto;
-    max-width: 400px;
-    padding: 20px;
-    box-shadow: grey 1px 1px 1px 1px;
-    font-weight: bolder;
+*{
+  padding-top: 0;
+  margin-top: 0;
+  font-family:Arial, Helvetica, sans-serif;    
+}
+body{ 
+  margin-top: 0;   
+  background-color: white;
+  color: black;    
+}
+.navi_bar{
+  top: 0;
+  left: 0;
+  background-color: #505050;
+  position: fixed;
+  width: 100%;
 
-    
 }
-.linea{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 15px;
-}
-label{
-    margin-bottom: 5px;
-    width: 100%;
-    margin-bottom: 15px;
-  }  
-input{
-    width: 100%;
-    
-}
-ul{
-    
-    list-style-type: none;
-    display: flex;
-    background-color: black;
-    flex-direction: row;
-    color: white;
-    justify-content: center;
-    margin-top: 0px;
-    padding: 0px;
-    margin: auto;
-  }
+nav > ul{
+  
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0; 
+  left: 0;
   li{
-  margin-right: 10px;
-  margin-left: 10px;
+      list-style-type: none;
+      color: white;
+      margin-right: 10px;
+      margin-left: 10px;
+      padding: 10px;
+  }
+  button{
+      background-color: #505050;
+      border: solid 0px;
+      color: white;
+  }
+  button:hover{
+      cursor: pointer;
   }
   a{
-    color: white;
-    text-decoration: none;
-    display: block;
+      color: white;
+      text-decoration: none;
   }
+}
+.container{
+  display: flex;
+  flex-direction: column;    
+  align-items: center;
+}
+.form{
+  margin-top: 40px;        
+  padding: 20px;
+  width: 500px;
+  height: auto;
+  box-shadow: lightgray 1px 1px 1px 1px;
+  border-radius: 5px;
+  label{
+      font-weight: 600;
+     
+  }
+  input[type="text"],input[type="email"]{
+      width: 100%;
+      
+      padding: 2px;
+      
+  }
+  input[type="submit"]{
+      width: 101.3%;        
+      padding: 2px;
+      
+  }
+  select{
+      width: 101.3%;
+      padding: 2px;
+  }
+  input[type="button"]{
+      margin-top: 10px;
+      width: 101.3%;
+      padding: 2px;
+      align-self: center;
+  }
+}
