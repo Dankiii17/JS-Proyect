@@ -41,7 +41,7 @@
                 <label for="Country">Country:</label><br><br>
                 <select name="SelectYourCountry" id="select">
                     <option value="select" disabled selected>Select your country</option>
-                    <option value="Spain">Spain</option>
+                    <option value="Spain" onclick="spainselect()">Spain</option>
                     <option value="England">England</option>
                     <option value="Germany">Germany</option>
                 </select>
@@ -58,9 +58,36 @@
     <script>
   
         function validarcorreo() {
-            const regEx4emails = /^[a-zA-Z0-9._%+-]{3,}@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const formatoemail = /^[a-zA-Z0-9._%+-]{3,}@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
             let email = document.getElementById("email").value;
-            let validationMessage = document.getElementById("validation");
+            let mensaje = document.getElementById("validation");
+            
+            if(formatoemail.test(email.toLowerCase())){
+                mensaje.textContent= email+"is valid :)";
+                mensaje.style.color="green";
+
+            }else{
+                mensaje.textContent= email+"is not correct, please retry :(";
+                mensaje.style.color="red ";
+            }
+        }
+        function spainselect(){
+            var eleccion= document.getElementById("select").value;
+            if(eleccion=="Spain"){
+                let p=document.getElementById("select");
+                let provincias= document.createElement("select");
+                let opcion= document.createElement("option");
+                option.textContent="Madrid";
+                 let opcion2= document.createElement("option2");
+                option.textContent="Navarra";
+                 let opcion3= document.createElement("option3");
+                option.textContent="Pais Vasco";
+                p.appendChild(provincias);
+                p.appendChild(opcion)
+                p.appendChild(opcion2)
+                p.appendChild(opcion3)
+
+            }
 
         }
     </script>
