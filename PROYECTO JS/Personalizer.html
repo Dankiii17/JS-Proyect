@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script src="personalizer.js"></script>
+        <link rel="stylesheet" href="personalizer.css">
+    </head>
+
+    <body>
+        <p class="Banner">
+            <span class="BannerP" onclick="toggleMenu()">Personalizer</span>
+            <span class="BannerF">Form</span>
+            <span class="BannerI">Images</span>
+        </p>
+        <h1 class="text">Welcome to Personalizer</h1>
+        <h3 class="text">This is a paragraph that you can adapt its content</h3>
+        <h3 class="text">Click to Personalizer banner</h3>
+    </body>
+
+    <div id="menu" class="menu">
+        <p>Bg_color</p>
+        <div class="Colores">
+            <button class="buttonBGC1" onclick="changeBackgroundColor()"></button>
+            <button class="buttonBGC2" onclick="changeBackgroundColor2()"></button>
+            <button class="buttonBGC3" onclick="changeBackgroundColor3()"></button>
+            <button class="buttonBGC4" onclick="changeBackgroundColor4()"></button>
+            <button class="buttonBGC5" onclick="changeBackgroundColor5()"></button>
+        </div>
+        
+        <p>Change_letters</p>
+        <div class="Tamaño">
+            <button onclick="changeFontSize(15)">XS</button>
+            <button onclick="changeFontSize(20)">S</button>
+            <button onclick="changeFontSize(25)">M</button>
+            <button onclick="changeFontSize(30)">L</button>
+            <button onclick="changeFontSize(35)">XL</button>
+        </div>
+
+        <p>Change_Font</p>
+        <div class="Tamaño">
+            <button onclick="changeFont('Courier New')">C</button>
+            <button onclick="changeFont('Times New Roman')">T</button>
+            <button onclick="changeFont('Verdana')">V</button>
+            <button onclick="changeFont('Arial')">A</button>
+            <button onclick="changeFont('Fantasy')">F</button>
+        </div>
+
+    </div>
+</html>
+
+
+
+
+
+
+
