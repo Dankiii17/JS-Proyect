@@ -1,0 +1,52 @@
+.BannerF {
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+  
+  .BannerI {
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+  .Banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: -15px;
+    margin-right: -30px;
+    margin-left: -30px;
+    position: relative;
+  }
+  
+  .BannerP {
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  .magicButton, .autoLoading{
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 5px gray;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.magicButton{
+    margin-top: 5px;
+}
+
+.autoLoading{
+    margin-top: 20px;
+}

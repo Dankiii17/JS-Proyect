@@ -30,7 +30,7 @@
     display: none;
     position: fixed;
     top: 45px;
-    left: 540px;
+    left: 740px;
     background-color: white;
     padding: 10px;
     border: 1px solid #ccc;
@@ -110,4 +110,12 @@
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.menu button:hover {
+    transform: scale(1.1);
+    border-color: limegreen;
 }

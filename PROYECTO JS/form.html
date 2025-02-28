@@ -6,7 +6,11 @@
 </head>
 <body>
     
-
+        <p class="Banner">
+            <span class="BannerP" onclick="toggleMenu()"><a href="Personalizer.html">Personalizer</a></span>
+            <span class="BannerF">Form</span>
+            <span class="BannerI"><a href="Images.html">Images</a></span>
+        </p>
     <div class="container">
         <div class="form">
             <form action="Personalizer.html" id="form">
@@ -38,18 +42,24 @@
                 </select><br><br>
                 <div class="province">
                 <label for="Prov">Province:</label>
-                <select name="" id="Province">
+                <select name="" id="Province" onchange="navarraselect()">
                     <option value="select" disabled selected>Select your province</option>
                     <option value="Navarra" onclick="">Navarra</option>
+                    <option value="Navarra" onclick="">Cataluña</option>
+                    <option value="Navarra" onclick="">Pais vasco</option>
+                    <option value="Navarra" onclick="">Galicia</option>
                 </select>
                 <br>
                 </div>
                 <div class="Town">
                 <label for="Prov">Town:</label>
-                <select name="" id="Province" onchange="navarraselect()">
+                <select name="" id="Town" >
                     <option value="select" disabled selected>Select your province</option>
-                    <option value="Navarra">Navarra</option>
-                    <option value=""></option>
+                    <option value="">Ablitas</option>
+                    <option value="">Villafranca</option>
+                    <option value="">Lerin</option>
+                    <option value="">Sangüesa</option>
+               
                 </select>
                 </div>
                 
@@ -91,11 +101,11 @@
         function navarraselect(){
             let eleccion=document.getElementById("Province").value;
             if(eleccion==="Navarra"){
-                let province= document.getElementsByClassName("Town")[0];
-                province.style.display="block";
+                let town= document.getElementsByClassName("Town")[0];
+                town.style.display="block";
             }else{
-                let province= document.getElementsByClassName("Town")[0];
-                province.style.display="none"
+                let town= document.getElementsByClassName("Town")[0];
+                town.style.display="none"
             }
         }
       </script>
